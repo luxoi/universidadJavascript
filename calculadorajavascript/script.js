@@ -5,7 +5,9 @@ function sumar(){
     let operandoA = forma['operandoA']
     let operandoB = forma['operandoB']
     let resultado = parseInt(operandoA.value) + parseInt(operandoB.value);
-
+    if(isNaN (resultado)){
+        resultado = 'La operacion no incluyé numeros';
+    }
     document.getElementById('resultado').innerHTML = 'Resultado: '+resultado;
 
 }
